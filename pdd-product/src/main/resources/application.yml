@@ -1,0 +1,25 @@
+server:
+  port: 9001 #项目端口
+
+spring:
+  application:
+    name: product-rpc-serivce
+  dubbo:
+    server: true
+    registry: zookeeper://localhost:2181
+    protocol:
+      name: dubbo
+      port: 20891
+#  datasource:
+#    #      url: jdbc:mysql://127.0.0.1:3306/guns_rest?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+#    url: jdbc:mysql://127.0.0.1:3306/sell_app?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    username: root
+#    password: root
+#    filters: log4j,wall,mergeStat
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#logging:
+#  level.root: info
+#  level.com.stylefeng: debug
+#  path: logs/
+#  file: guns-rest.log
