@@ -9,7 +9,7 @@ spring:
     registry: zookeeper://47.101.144.28:2181
     protocol:
       name: dubbo
-      port: 20891
+      port: 20892
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

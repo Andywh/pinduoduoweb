@@ -1,11 +1,12 @@
 package com.pinduoduo.product.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.pinduoduo.facade.order.IProductService;
 import com.pinduoduo.product.dao.CategoryMapper;
 import com.pinduoduo.product.enums.CategoryParentIdEnum;
 import com.pinduoduo.product.pojo.Category;
-import com.pinduoduo.product.vo.CategoryVO;
-import com.pinduoduo.product.vo.SearchCategoryVO;
+import com.pinduoduo.resp.product.CategoryVO;
+import com.pinduoduo.resp.product.SearchCategoryVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

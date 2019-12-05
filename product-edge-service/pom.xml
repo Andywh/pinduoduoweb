@@ -3,15 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.pinduoduo</groupId>
         <artifactId>pdd-parent</artifactId>
+        <groupId>com.pinduoduo</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pdd-rest</artifactId>
-
-    <name>pdd-rest</name>
+    <artifactId>product-edge-service</artifactId>
+    <name>product-edge-service</name>
     <description>拼多多后台聚合服务</description>
 
     <dependencies>
@@ -28,6 +27,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.pinduoduo</groupId>
+            <artifactId>product-service-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.pinduoduo</groupId>
@@ -88,5 +92,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

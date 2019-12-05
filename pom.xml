@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.1.RELEASE</version>
+        <version>2.1.7.RELEASE</version>
     </parent>
 
     <groupId>com.pinduoduo</groupId>
@@ -14,13 +14,17 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>meal</name>
+    <name>pdd</name>
     <description>拼多多后台</description>
 
     <modules>
         <module>pdd-common</module>
         <module>pdd-product</module>
         <module>pdd-rest</module>
+        <module>api-gateway-zuul</module>
+        <module>product-service-api</module>
+        <module>product-service</module>
+        <module>product-edge-service</module>
     </modules>
 
     <properties>

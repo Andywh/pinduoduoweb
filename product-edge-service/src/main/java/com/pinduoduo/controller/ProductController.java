@@ -1,7 +1,7 @@
-package com.pinduoduo.controller.product;
+package com.pinduoduo.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.pinduoduo.facade.order.IProductService;
+import com.pinduoduo.product.service.IProductService;
 import com.pinduoduo.response.ResultVO;
 import com.pinduoduo.utils.ResultVOUtil;
 import lombok.extern.slf4j.Slf4j;
