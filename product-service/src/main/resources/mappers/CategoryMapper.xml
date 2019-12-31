@@ -157,7 +157,7 @@
             <include refid="Example_Where_Clause"/>
         </if>
     </select>
-    <select id="findCategorySearchList" resultType="com.pinduoduo.product.pojo.Category">
+    <select id="findCategorySearchList1" resultType="com.pinduoduo.product.pojo.Category">
 
       select * from t_category where parent_id = 0
       union
@@ -171,6 +171,12 @@
             where a.parent_id = b.id
         ) as c
         where d.parent_id = c.id;
+    </select>
+    <select id="findCategorySearchList" resultType="com.pinduoduo.product.pojo.Category">
+
+      select * from t_category where parent_id = 0
+      union
+      select * from t_category where sort = 0;
     </select>
     <update id="updateByExampleSelective" parameterType="map">
         update t_category

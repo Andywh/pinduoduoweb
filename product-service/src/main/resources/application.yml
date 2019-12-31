@@ -9,13 +9,20 @@ spring:
     registry: zookeeper://47.101.144.28:2181
     protocol:
       name: dubbo
-      port: 20892
+      port: 20894
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
     url: jdbc:mysql://47.101.144.28:3306/pdd?useUnicode=true&characterEncoding=utf8&useSSL=false
+#  jackson:
+#    default-property-inclusion: non_null
+  redis:
+    host: 47.101.144.28
+    port: 6379
+    timeout: 30000
+
 
 mybatis:
   configuration:

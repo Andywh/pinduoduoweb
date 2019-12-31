@@ -1,5 +1,6 @@
 package com.pinduoduo.product.service;
 
+import com.pinduoduo.product.vo.CategoryVO;
 import com.pinduoduo.product.vo.SearchCategoryVO;
 
 import java.util.List;
@@ -19,4 +20,13 @@ public interface IProductService {
      */
     List<SearchCategoryVO> querySearchCategoryList();
 
+    /**
+     * 首页按0级品类 id 获取 一级下钻列表
+     */
+    List<CategoryVO> queryCategoryListAndPicByParentId(Integer parenetId);
+
+    /**
+     * 根据父类 id 获取下一级品类列表
+     */
+    List<CategoryVO> queryCategoryListByParentId(Integer parentId);
 }

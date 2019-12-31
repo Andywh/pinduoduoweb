@@ -19,16 +19,18 @@
 
     <modules>
         <module>pdd-common</module>
-        <module>pdd-product</module>
-        <module>pdd-rest</module>
         <module>api-gateway-zuul</module>
         <module>product-service-api</module>
         <module>product-service</module>
-        <module>product-edge-service</module>
+        <module>product-rest</module>
+        <module>user-service-api</module>
+        <module>user-service</module>
+        <module>user-rest</module>
     </modules>
 
     <properties>
         <java.version>1.8</java.version>
+        <project.version>0.0.1-SNAPSHOT</project.version>
     </properties>
 
     <dependencies>

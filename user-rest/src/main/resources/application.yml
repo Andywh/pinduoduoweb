@@ -1,0 +1,23 @@
+server:
+  port: 9002
+  servlet:
+    context-path: /api
+
+spring:
+  dubbo:
+    application:
+      name: user-rest-service
+    registry:
+      address: zookeeper://47.101.144.28:2181
+    scan: com.pinduoduo
+    consumer:
+      timeout: 50000
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 47.101.144.28
+    port: 6379
+    timeout: 30000
+
+
+

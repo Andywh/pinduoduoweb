@@ -4,6 +4,13 @@ server:
 zuul:
   routes:
     product:
-      path=/api/product/**
-      url=http://localhost:9000/product/
-
+      path: /api/product/**
+      url: http://47.101.144.28:9000/api/product/
+    user:
+      path: /api/user/**
+      url: http://47.101.144.28:9002/api/user/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
